@@ -1,0 +1,133 @@
+/* MovieDetailsPage.css */
+
+/* Container styling */
+.container-movie {
+    padding: 24px;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on card */
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Card image styling */
+  .card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect on image */
+  .card-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Movie title styling */
+  .card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Movie title hover effect */
+  .card-title:hover {
+    color: #3b82f6;
+  }
+  
+  /* Movie genre (subtitle) styling */
+  .card-subtitle {
+    color: #6b7280;
+    font-size: 1.125rem;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  
+  /* Movie description styling */
+  .card-description {
+    color: #333;
+    margin-top: 12px;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Card footer for ratings and director */
+  .card-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Favorite button styling */
+  .favorite-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hover effect on favorite button */
+  .favorite-button:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+  
+  /* Icon or text next to button (if you add an icon) */
+  .favorite-button svg {
+    margin-right: 8px;
+  }
+  
+  /* Adding smooth transition for text in card description */
+  .card-description {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .card-description:hover {
+    color: #3b82f6;
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      padding: 16px;
+    }
+  
+    .card-title {
+      font-size: 2rem;
+    }
+  
+    .card-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  

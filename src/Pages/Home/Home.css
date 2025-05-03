@@ -1,0 +1,81 @@
+/* Home.css */
+
+/* Container for the page */
+.container-movie {
+    padding: 24px;
+  }
+  
+  /* Header styling */
+  .header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  /* Input group for the search bar */
+  .input-group {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  
+  /* Search input field */
+  .search-input {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+  /* Search button */
+  .search-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for search button */
+  .search-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Grid layout for the movie cards */
+  .grid-movie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  
+  /* Large screen: Show 5 to 6 cards */
+  @media (min-width: 1024px) {
+    .grid-movie {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  /* Medium screen: Show 4 cards */
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .grid-movie {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Small screen: Show 3 cards */
+  @media (max-width: 768px) and (min-width: 480px) {
+    .grid-movie {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Extra small screen: Show 2 cards */
+  @media (max-width: 480px) {
+    .grid-movie {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
